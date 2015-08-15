@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:genius="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <net.qiujuer.genius.widget.GeniusButton
+            android:id="@+id/version1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            genius:g_theme="@array/LuciteGreen"
+            android:text="Version1"></net.qiujuer.genius.widget.GeniusButton>
+
+        <net.qiujuer.genius.widget.GeniusButton
+            android:layout_marginTop="50dp"
+            android:id="@+id/version2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            genius:g_theme="@array/LuciteGreen"
+            android:text="Version2"></net.qiujuer.genius.widget.GeniusButton>
+
+        <net.qiujuer.genius.widget.GeniusButton
+            android:layout_marginTop="50dp"
+            android:id="@+id/setting"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            genius:g_theme="@array/LuciteGreen"
+            android:text="Setting"></net.qiujuer.genius.widget.GeniusButton>
+
+    </LinearLayout>
+    <net.qiujuer.genius.widget.GeniusButton
+        android:id="@+id/auto_connect"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        genius:g_theme="@array/LuciteGreen"
+        android:text="AutoConnect"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"></net.qiujuer.genius.widget.GeniusButton>
+</RelativeLayout>

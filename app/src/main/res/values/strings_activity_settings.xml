@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_wifi">Wifi</string>
+    <!-- Strings related to Settings -->
+</resources>

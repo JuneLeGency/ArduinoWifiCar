@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/webView" />
+
+    <RelativeLayout
+        android:id="@+id/touch_layer"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/right"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/right_btn"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@+id/left"
+            android:layout_toRightOf="@+id/down"
+            android:layout_toEndOf="@+id/down" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/left"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/left_btn"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="29dp" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/down"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/down_btn"
+            android:background="@null"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/up"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/up_btn"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_above="@+id/down"
+            android:layout_toLeftOf="@+id/right"
+            android:layout_toStartOf="@+id/right" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/setting"
+            android:src="@mipmap/setting"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_alignTop="@+id/right"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

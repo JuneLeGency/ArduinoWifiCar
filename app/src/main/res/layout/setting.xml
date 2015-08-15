@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:genius="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <net.qiujuer.genius.widget.GeniusTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Network"
+            android:textSize="20sp"
+            genius:g_textColor="main" />
+
+        <net.qiujuer.genius.widget.GeniusEditText
+            android:id="@+id/wifi_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="SSID"
+            android:textSize="14sp"
+            genius:g_borderWidth="3dp"
+            genius:g_cornerRadii_B="20dp"
+            genius:g_cornerRadii_D="20dp"
+            genius:g_cornerRadius="10dp"
+            android:paddingLeft="20dp"
+            genius:g_theme="@array/LuciteGreen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <net.qiujuer.genius.widget.GeniusEditText
+                android:id="@+id/ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:hint="Ip"
+                android:textSize="14sp"
+                genius:g_borderWidth="3dp"
+                genius:g_cornerRadii_B="20dp"
+                genius:g_cornerRadii_D="20dp"
+                genius:g_cornerRadius="10dp"
+                android:paddingLeft="20dp"
+                genius:g_theme="@array/LuciteGreen" />
+
+            <net.qiujuer.genius.widget.GeniusEditText
+                android:id="@+id/port_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Video Port"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                genius:g_borderWidth="3dp"
+                genius:g_cornerRadii_B="20dp"
+                genius:g_cornerRadii_D="20dp"
+                genius:g_cornerRadius="10dp"
+                android:paddingLeft="20dp"
+                genius:g_theme="@array/LuciteGreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <net.qiujuer.genius.widget.GeniusEditText
+                android:id="@+id/port_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Control Port"
+                android:textSize="14sp"
+                genius:g_borderWidth="3dp"
+                genius:g_cornerRadii_B="20dp"
+                genius:g_cornerRadii_D="20dp"
+                genius:g_cornerRadius="10dp"
+                android:paddingLeft="20dp"
+                genius:g_theme="@array/LuciteGreen" />
+        </LinearLayout>
+        <net.qiujuer.genius.widget.GeniusTextView
+            android:id="@+id/video_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="12sp"
+            genius:g_textColor="main" />
+
+        <net.qiujuer.genius.widget.GeniusTextView
+            android:id="@+id/title_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Control Command"
+            android:textSize="20sp"
+            genius:g_textColor="main" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <net.qiujuer.genius.widget.GeniusEditText
+                android:id="@+id/up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:hint="Forward"
+                android:textSize="14sp"
+                genius:g_borderWidth="3dp"
+                genius:g_cornerRadii_B="20dp"
+                genius:g_cornerRadii_D="20dp"
+                genius:g_cornerRadius="10dp"
+                android:paddingLeft="20dp"
+                genius:g_theme="@array/LuciteGreen" />
+
+            <net.qiujuer.genius.widget.GeniusEditText
+                android:id="@+id/down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Backward"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                genius:g_borderWidth="3dp"
+                genius:g_cornerRadii_B="20dp"
+                genius:g_cornerRadii_D="20dp"
+                genius:g_cornerRadius="10dp"
+                android:paddingLeft="20dp"
+                genius:g_theme="@array/LuciteGreen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <net.qiujuer.genius.widget.GeniusEditText
+                android:id="@+id/left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:hint="Left"
+                android:textSize="14sp"
+                genius:g_borderWidth="3dp"
+                genius:g_cornerRadii_B="20dp"
+                genius:g_cornerRadii_D="20dp"
+                genius:g_cornerRadius="10dp"
+                android:paddingLeft="20dp"
+                genius:g_theme="@array/LuciteGreen" />
+
+            <net.qiujuer.genius.widget.GeniusEditText
+                android:id="@+id/right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Right"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                genius:g_borderWidth="3dp"
+                genius:g_cornerRadii_B="20dp"
+                genius:g_cornerRadii_D="20dp"
+                genius:g_cornerRadius="10dp"
+                android:paddingLeft="20dp"
+                genius:g_theme="@array/LuciteGreen" />
+        </LinearLayout>
+
+        <net.qiujuer.genius.widget.GeniusButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="Save"
+            genius:g_borderWidth="3dp"
+            genius:g_cornerRadii_B="20dp"
+            genius:g_cornerRadii_D="20dp"
+            genius:g_cornerRadius="10dp"
+            genius:g_textAppearance="light"
+            genius:g_theme="@array/LuciteGreen"
+            genius:g_touchEffect="press" />
+
+    </LinearLayout>
+</ScrollView>
